@@ -4,29 +4,29 @@ class MembersController < ApplicationController
 
   end
 
-  # def new
+  def new
 
-  # end
+  end
 
-  # def create
+  def create
 
-  # end
+  end
 
-  # def deit
+  def deit
 
-  # end
+  end
 
-  # def destroy
+  def destroy
 
-  # end
+  end
 
-  # def update
+  def update
 
-  # end
+  end
 
-  # def show
+  def show
 
-  # end
+  end
 
 
 end
