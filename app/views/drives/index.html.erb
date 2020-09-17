@@ -1,0 +1,90 @@
+<%= render "shared/header" %>
+
+<div class="items-sell-contents">
+  <header class="items-sell-header">
+
+  </header>
+  <div class="items-sell-main">
+    <h2 class="items-sell-title">運転代行料金</h2>
+    <%= form_with local: true do |f| %>
+    <ul class="price-teble">
+      <li class="price-teble-two">基本料金</li>
+      <li class="price-teble-two">初乗り５kまで5000円</li>
+      <li class="price-teble-two">以降0.5ずつ500円ずつ</li>
+      <li class="price-teble-two">5000円以上割引あり</li>
+    </ul>
+    <% end %>
+
+    <div class="center-price">
+    
+        <h2 class="all-price"></h2>
+          <%# 高速料金 %>
+          <ul>
+            <%= link_to image_tag('hi-price.png' , size: '150x200'), "/" %>
+
+          </ul>
+
+        <h2 class="all-price"></h2>
+        <%# 待ち時間 %>
+          <ul>
+           <%= link_to image_tag('hi-price.png' , size: '150x200'), "/" %>
+
+          </ul>
+
+
+        <h2 class="all-price"></h2>
+        <%# キャンセル料 %>
+          <ul>
+            <%= link_to image_tag('hi-price.png' , size: '150x200'), "/" %>
+          </ul>
+    </div>
+
+    <div class="method-of-payment">
+      <h2 class="payment-two">お支払い方法</h2>
+        <ul class="payment-three">
+         <%= link_to image_tag('card-amex.gif' , size: '60x60'), "/" %>
+         <%= link_to image_tag('card-jcb.gif' , size: '60x60'), "/" %>
+         <%= link_to image_tag('card-mastercard.gif' , size: '60x60'), "/" %>
+         <%= link_to image_tag('card-visa.gif' , size: '60x60'), "/" %>
+        <li class="payment-for">お支払いは現金または　、上記の各種クレジットカード以外にも取り扱っております。</li>
+        </ul>
+    </div>
+
+    <div class="play">
+    <h2 class="play-two">ご利用方法</h2>
+      <ul class="play-three">
+      <li class="play-three">・こちらのお電話番号にご連絡ください。</li>
+      <li class="play-three">担当者が出ましたら確認事項をお伝えください。</li>
+      <li class="play-three">・お名前と直接連絡の取れる連絡先</li>
+      <li class="play-three">・お車の車種と４桁の車番</li>
+      <li class="play-three">・お車の停めておられる駐車場名、施設名等</li>
+      <li class="play-three">・お帰り先、お帰り時間の予定</li>
+      <li class="play-three">・ご予約頂いてるお客様からのご案内となります。</li>
+      <li class="play-three">・また運転代行適正化法により禁止事項等がございます。</li>
+      <li class="play-three">下記のご確認を宜しくお願い致します。</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="play-two">確認事項</h2>
+    </div>
+
+    <div>
+      <h2 class="play-five">申し込む</h2>
+    </div>
+  </div>
+
+  <footer class="items-sell-footer">
+    <ul class="menu">
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="#">運転代行利用規約</a></li>
+      <li><a href="#">特定商取引に関する表記</a></li>
+    </ul>
+    <ul class="footer-image">
+    <%= link_to image_tag('furima-logo-color.png' , size: '185x50'), "/" %>
+    </ul>
+    <p class="inc">
+      ©︎Furima,Inc.
+    </p>
+  </footer>
+</div>
